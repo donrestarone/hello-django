@@ -17,8 +17,9 @@ from django.contrib import admin
 from django.urls import path
 # import the sayHello views 
 from hello_world.views import sayHello
-
+from hello_world.views import sayHelloInHtml
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sayHello/', sayHello)
+    path('sayhello/', sayHello),
+    path('sayhello/html/', sayHelloInHtml)
 ]
